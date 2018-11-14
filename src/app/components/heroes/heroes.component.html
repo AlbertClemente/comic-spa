@@ -1,44 +1,13 @@
-<h1>Héroes de Marvel y DC Comics</h1>
-<div class="row">
-  <div class="col s12 m7">
-    <div class="card">
-      <div class="card-image">
-        <img src="../../../assets/img/aquaman.jpg">
-        <span class="card-title">Card Title</span>
-      </div>
-      <div class="card-content">
-        <p>I am a very simple card. I am good at containing small bits of information.
-        I am convenient because I require little markup to use effectively.</p>
-      </div>
-      <div class="card-action">
-        <a href="#">This is a link</a>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-image">
-        <img src="../../../assets/img/aquaman.jpg">
-        <span class="card-title">Card Title</span>
-      </div>
-      <div class="card-content">
-        <p>I am a very simple card. I am good at containing small bits of information.
-        I am convenient because I require little markup to use effectively.</p>
-      </div>
-      <div class="card-action">
-        <a href="#">This is a link</a>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-image">
-        <img src="../../../assets/img/aquaman.jpg">
-        <span class="card-title">Card Title</span>
-      </div>
-      <div class="card-content">
-        <p>I am a very simple card. I am good at containing small bits of information.
-        I am convenient because I require little markup to use effectively.</p>
-      </div>
-      <div class="card-action">
-        <a href="#">This is a link</a>
-      </div>
+<h1 class="mt-4 mb-5">Héroes de Marvel y DC Comics</h1>
+
+<div class="card-columns">
+  <div class="card" *ngFor="let heroe of heroes">
+    <img class="card-img-top" [src]="heroe.img" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{heroe.nombre}}</h5>
+      <p class="card-text">{{heroe.bio}}</p>
+      <p class="card-text"><span class="text-muted">{{heroe.aparicion}}</span></p>
+      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Ver más...</button>
     </div>
   </div>
 </div>
