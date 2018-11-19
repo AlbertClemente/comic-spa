@@ -55,7 +55,22 @@ export class HeroeService {
       img: 'assets/img/wolverine.jpg',
       aparicion: '1974-11-01',
       casa: 'Marvel'
+    },
+    {
+      nombre: 'Ironman',
+      bio: 'Durante su infancia fué conocido por tener una de las mentes mas brillantes del mundo y heredero de Indutrias Stark, se convirtió en un gran empresario e ingeniero que le llevó al éxito incrementando su fortuna, eso le llevó a tener una vida lujosa, caótica y extravagante vida llena de excesos. La vida de Stark da un repentino giro de 180 grados el día en el que es secuestrado por un grupo de terroristas y sufre una grave lesión debido a una gran explosión de la cual un fragmento de metralla se incrusta en su pecho y cada día va aproximándose mas a su corazón. Tras el impacto, es operado y recluido durante meses en un zulo, donde sus secuestradores le obligan a que les construya un arma de destrucción masiva. En lugar del arma, Tony Stark crea para si una armadura de acero para protegerse de los terroristas y poder escapar, con múltiples armas incorporadas a su medida. Después de volver a casa, decide dejar de fabricar armas que puedan hacer daño al mundo y en lugar de ello reconstruye y mejora su armadura, convirtiéndose así en Ironman.',
+      img: 'assets/img/ironman.jpg',
+      aparicion: '1963-03-01',
+      casa: 'Marvel'
+    },
+    {
+      nombre: 'Superman',
+      bio: 'El superhéroe más reconocido en la cultura pop, Superman ha sido elevado al estado mítico folkhero. El bebé Kal-El llegó a la Tierra desde el planeta moribundo Krypton y fue encontrado por una pareja de granjeros que lo nombró Clark Kent y lo crió como propio. Descubriendo sus enormes poderes, le inculcaron fuertes valores morales y lo inspiraron a convertirse en un héroe.',
+      img: 'assets/img/superman.jpg',
+      aparicion: '1938-04-18',
+      casa: 'DC'
     }
+
   ];
 
   constructor() {
@@ -64,5 +79,9 @@ export class HeroeService {
 
   getHeroes(): Heroe[] {
     return this.heroes;
+  }
+
+  getHeroe( idx: string) {
+    return this.heroes[idx];
   }
 }

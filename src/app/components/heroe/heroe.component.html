@@ -1,0 +1,13 @@
+
+<a class="btn btn-primary mt-4 mb-5" [routerLink]="['/heroes']">Regresar</a>
+
+<div class="row">
+  <div class="col-6 col-md-4">
+    <img [src]="heroe.img" [alt]="heroe.nombre" class="img-fluid">
+  </div>
+  <div class="col-6 col-md-8">
+      <h1 class="mb-3">{{heroe.nombre}}</h1>
+      <h3 class="mb-2">{{heroe.casa}}</h3>
+      <p>{{heroe.bio}}</p>
+  </div>
+</div>
